@@ -16,12 +16,22 @@ private:
     int hora, minu;
 };
 
+Reloj:: Reloj(){
+    hora = 0;
+    minu = 0; 
+}
+
+Reloj:: Reloj(int a, int b){
+    hora = a;
+    minu = b; 
+}
+
 void Reloj::setHora(int h)
 {
-    if (h >= 0 && h<25)
-    hora = h;
-    else
-        hora=0;
+    //if (h >= 0 && h<25)
+    hora = ((h>=0 && h<25) ? h : 0);
+    /*else
+        hora=0;*/
 }
 
 void Reloj::setMin(int m)
