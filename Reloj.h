@@ -7,8 +7,8 @@ class Reloj
 public:
     Reloj();
     Reloj(int a, int b);
-    void setHora(int h);
-    void setMin(int m);
+    void setHora(int){hora = ((h>=0 && h<25) ? h : 0);};
+    void setMin(int m){minu = ((m>=0 && m<=59) ? m : 0);};
     int getHora();
     int getMin();
     void muestra();
@@ -26,11 +26,11 @@ Reloj:: Reloj(int a, int b){
     minu = b; 
 }
 
-void Reloj::setHora(int h)
+/*void Reloj::setHora(int h)
 {
     //if (h >= 0 && h<25)
-    hora = ((h>=0 && h<25) ? h : 0);
-    /*else
+        hora = ((h>=0 && h<25) ? h : 0);
+    else
         hora=0;*/
 }
 
