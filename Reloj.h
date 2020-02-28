@@ -5,6 +5,8 @@
 class Reloj
 {
 public:
+    Reloj();
+    Reloj(int a, int b);
     void setHora(int h);
     void setMin(int m);
     int getHora();
