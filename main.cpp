@@ -53,16 +53,16 @@ int main() {
             cont = 0;
             switch(palabra[1]){
                 case -5:
-                    archivoSalida << "(" + to_string(palabra[0]) +") + " + "("+ to_string(palabra[2]) + ") = " +  to_string(palabra[0] + palabra[2]) << endl;
+                    archivoSalida << "(" + to_string(palabra[0]) +") + (" + to_string(palabra[2]) + ") = " +  to_string(palabra[0] + palabra[2]) << endl;
                     break;
                 case -3:
-                    archivoSalida << "(" + to_string(palabra[0]) +") - " + "("+ to_string(palabra[2]) + ") = " +  to_string(palabra[0] - palabra[2]) << endl;
+                    archivoSalida << "(" + to_string(palabra[0]) +") - (" + to_string(palabra[2]) + ") = " +  to_string(palabra[0] - palabra[2]) << endl;
                     break;
                 case -6:
-                    archivoSalida << "(" + to_string(palabra[0]) +") * " + "("+ to_string(palabra[2]) + ") = " +  to_string(palabra[0] * palabra[2]) << endl;
+                    archivoSalida << "(" + to_string(palabra[0]) +") * (" + to_string(palabra[2]) + ") = " +  to_string(palabra[0] * palabra[2]) << endl;
                     break;
                 case -1:
-                    archivoSalida << "(" + to_string(palabra[0]) +") / " + "("+ to_string(palabra[2]) + ") = " +  to_string(palabra[0] / palabra[2]) << endl;
+                    archivoSalida << "(" + to_string(palabra[0]) +") / (" + to_string(palabra[2]) + ") = " +  to_string(palabra[0] / palabra[2]) << endl;
                     break;
                 default:
                     cout<<endl;
